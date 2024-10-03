@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Reviews</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .food-review {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .food-title {
+            font-size: 1.6em;
+            color: #e67e22;
+        }
+        .food-description {
+            font-size: 1em;
+            color: #555;
+            margin: 10px 0;
+        }
+        .rating {
+            display: flex;
+            gap: 5px;
+            font-size: 1.2em;
+            color: #ffcc00;
+        }
+        input[type="radio"] {
+            display: none;
+        }
+        label {
+            cursor: pointer;
+        }
+        input[type="radio"]:checked ~ label {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Review Your Favorite Foods</h1>
+
+    <!-- Food 1 -->
+    <div class="food-review">
+        <h2 class="food-title">1. Margherita Pizza</h2>
+        <p class="food-description">
+            A classic pizza made with fresh mozzarella, basil, and tomatoes. The crispy crust and rich tomato sauce create the perfect balance of flavors.
+        </p>
+        <div class="rating">
+            <span>Rate this food: </span>
+            <form>
+                <input type="radio" id="pizza-star5" name="pizza-rating" value="5">
+                <label for="pizza-star5">&#9733;</label>
+                <input type="radio" id="pizza-star4" name="pizza-rating" value="4">
+                <label for="pizza-star4">&#9733;</label>
+                <input type="radio" id="pizza-star3" name="pizza-rating" value="3">
+                <label for="pizza-star3">&#9733;</label>
+                <input type="radio" id="pizza-star2" name="pizza-rating" value="2">
+                <label for="pizza-star2">&#9733;</label>
+                <input type="radio" id="pizza-star1" name="pizza-rating" value="1">
+                <label for="pizza-star1">&#9733;</label>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food 2 -->
+    <div class="food-review">
+        <h2 class="food-title">2. Grilled Salmon</h2>
+        <p class="food-description">
+            This delicious salmon is grilled to perfection and topped with a tangy lemon butter sauce. It's served with a side of steamed vegetables.
+        </p>
+        <div class="rating">
+            <span>Rate this food: </span>
+            <form>
+                <input type="radio" id="salmon-star5" name="salmon-rating" value="5">
+                <label for="salmon-star5">&#9733;</label>
+                <input type="radio" id="salmon-star4" name="salmon-rating" value="4">
+                <label for="salmon-star4">&#9733;</label>
+                <input type="radio" id="salmon-star3" name="salmon-rating" value="3">
+                <label for="salmon-star3">&#9733;</label>
+                <input type="radio" id="salmon-star2" name="salmon-rating" value="2">
+                <label for="salmon-star2">&#9733;</label>
+                <input type="radio" id="salmon-star1" name="salmon-rating" value="1">
+                <label for="salmon-star1">&#9733;</label>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food 3 -->
+    <div class="food-review">
+        <h2 class="food-title">3. Chocolate Lava Cake</h2>
+        <p class="food-description">
+            A decadent chocolate dessert with a molten center, perfect for chocolate lovers. Served warm with a scoop of vanilla ice cream.
+        </p>
+        <div class="rating">
+            <span>Rate this food: </span>
+            <form>
+                <input type="radio" id="cake-star5" name="cake-rating" value="5">
+                <label for="cake-star5">&#9733;</label>
+                <input type="radio" id="cake-star4" name="cake-rating" value="4">
+                <label for="cake-star4">&#9733;</label>
+                <input type="radio" id="cake-star3" name="cake-rating" value="3">
+                <label for="cake-star3">&#9733;</label>
+                <input type="radio" id="cake-star2" name="cake-rating" value="2">
+                <label for="cake-star2">&#9733;</label>
+                <input type="radio" id="cake-star1" name="cake-rating" value="1">
+                <label for="cake-star1">&#9733;</label>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
